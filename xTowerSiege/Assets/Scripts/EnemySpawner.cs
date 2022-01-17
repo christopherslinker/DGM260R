@@ -17,10 +17,10 @@ public class EnemySpawner : MonoBehaviour
 
     void Start()
     {
-        InvokeRepeating(nameof(SpawnRandomAsteroid), startDelay, startInterval);
+        InvokeRepeating(nameof(SpawnRandomEnemy), startDelay, startInterval);
     }
     
-    private void SpawnRandomAsteroid ()
+    private void SpawnRandomEnemy ()
     {
         var spawnPos = new Vector3(Random.Range(-spawnRangeX, spawnRangeX), 0, SpawnPosZ);
                 
