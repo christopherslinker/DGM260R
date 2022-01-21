@@ -6,24 +6,27 @@ using static UnityEngine.Color;
 
 public class PlayerController : MonoBehaviour
 {
-    private float horizontalInput;
+    private Touch touch;
+    private float speed;
 
-    private float verticalInput;
-
-    private float speed = 5.0f;
-
-    private float xRange = 4f;
-
-    private float zRange = 8.5f;
-    
-    
-    void Update()
+    private void Start()
     {
+        speed = 1f;
+    }
 
-        horizontalInput = Input.GetAxis("Horizontal");
-                transform.Translate(Vector3.right * Time.deltaTime * speed * horizontalInput);
-                
-                verticalInput = Input.GetAxis("Vertical");
-                transform.Translate(Vector3.forward * Time.deltaTime * speed * verticalInput);
+    private void Update()
+    {
+        if (Input.touchCount > 0)
+        {
+            touch = Input.GetTouch(0);
+
+            if (touch.phase == TouchPhase.Moved)
+            {
+                transform.position = new Vector3(
+                    transform.position.x + touch.deltaPosition.x * speed,
+                    transform.position.y,
+                    transform.position.z + touch.deltaPosition.y * speed);
+            }
+        }
     }
 }
