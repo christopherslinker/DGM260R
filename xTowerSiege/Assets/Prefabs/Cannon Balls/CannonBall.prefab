@@ -13,6 +13,8 @@ GameObject:
   - component: {fileID: 7659208094093493713}
   - component: {fileID: 7659208094093493714}
   - component: {fileID: 7659208094093493715}
+  - component: {fileID: 3405803389354258358}
+  - component: {fileID: 8588855415647253632}
   m_Layer: 0
   m_Name: CannonBall
   m_TagString: Untagged
@@ -92,7 +94,7 @@ SphereCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7659208094093493724}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Radius: 0.5
@@ -110,3 +112,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 2000
+--- !u!114 &3405803389354258358
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7659208094093493724}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1d69a2358976c4a5da95d9c63d92fa99, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &8588855415647253632
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7659208094093493724}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1ca86461a3674fd485c939785c1144b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
