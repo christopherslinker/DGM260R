@@ -6,7 +6,6 @@ using UnityEngine;
 public class CannonBallMovement : MonoBehaviour
 {
     public float speed = 100f;
-    public GameObject player;
 
     private void Start()
     {

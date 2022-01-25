@@ -307,7 +307,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cannonBall:
   - {fileID: 7659208094093493724, guid: eef3c2f7f91b24f7aa869717b0076ac6, type: 3}
-  startInterval: 3
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
