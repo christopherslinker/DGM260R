@@ -6,23 +6,23 @@ public class EnemySpawner : MonoBehaviour
 {
     public GameObject[] enemyPrefab;
 
-    private float spawnRangeX = 4;
+    public float spawnPosX = 500;
 
-    private float SpawnPosZ = 7524f;
+    public float SpawnPosZ = 7524f;
 
-    private float startDelay = 2;
+    public float startDelay = 2f;
 
-    public float startInterval = 3.0f;
+    public float spawnInterval = 5.0f;
     
 
     void Start()
     {
-        InvokeRepeating(nameof(SpawnRandomEnemy), startDelay, startInterval);
+        InvokeRepeating(nameof(SpawnRandomEnemy), startDelay, spawnInterval);
     }
     
     private void SpawnRandomEnemy ()
     {
-        var spawnPos = new Vector3(Random.Range(-spawnRangeX, spawnRangeX), 0, SpawnPosZ);
+        var spawnPos = new Vector3(Random.Range(spawnPosX, -spawnPosX), 0, SpawnPosZ);
                 
         int enemyIndex = Random.Range(0, enemyPrefab.Length);
                 
