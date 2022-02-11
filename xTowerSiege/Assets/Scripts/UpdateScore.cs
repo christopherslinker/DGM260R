@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Security.Cryptography;
 using UnityEngine;
 
 public class UpdateScore : MonoBehaviour
@@ -11,6 +12,7 @@ public class UpdateScore : MonoBehaviour
     {
         scoreManager = GameObject.Find("ScoreManager").GetComponent<ScoreManager>();
     }
+    
 
     private void OnTriggerEnter(Collider other)
     {
