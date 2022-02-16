@@ -8,20 +8,18 @@ public class Boundaries : MonoBehaviour
 
     private float verticalInput;
 
-    private float speed = 5.0f;
-
     private float xLowRange = -605f;
 
     private float xHighRange = 870f;
 
-    private float zRange = 8.5f;
+    private float zRange = 719f;
     
     
     void Update()
     {
         if (transform.position.x < xLowRange)
         {
-            transform.position = new Vector3(-xLowRange, transform.position.y, transform.position.z);
+            transform.position = new Vector3(xLowRange, transform.position.y, transform.position.z);
         }
         
         if (transform.position.x > xHighRange)
