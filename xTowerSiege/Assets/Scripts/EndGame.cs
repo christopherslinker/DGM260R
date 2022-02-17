@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class OnTriggerDestroy : MonoBehaviour
+public class EndGame : MonoBehaviour
 {
     private GameOverBehaviour gameOverBehaviour;
 

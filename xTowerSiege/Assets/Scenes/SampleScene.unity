@@ -245,7 +245,7 @@ GameObject:
   - component: {fileID: 621714667}
   - component: {fileID: 621714670}
   m_Layer: 0
-  m_Name: Game Over
+  m_Name: GameOverBehaviour
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1088,11 +1088,23 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1367998059}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 0.9196238, y: 0.062651195, z: 0.08714282}
   m_Center: {x: -0.0058922404, y: 0.005817279, z: 0.026951233}
+--- !u!114 &1367998065
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1367998059}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ba63e27de5a046ffa3b20d09a03dfc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1490173044
 PrefabInstance:
   m_ObjectHideFlags: 0
