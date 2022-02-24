@@ -26,7 +26,7 @@ public class PowerUpSpawner : MonoBehaviour
 
     void SpawnCollectable()
     {
-        if (!gameOverBehaviour.gameIsOver)
+        if (gameOverBehaviour.gameIsOver)
         {
             float randomX = Random.Range(-xSpawnRange, xSpawnRange);
             float randomZ = Random.Range(-zSpawnRange, zSpawnRange);
