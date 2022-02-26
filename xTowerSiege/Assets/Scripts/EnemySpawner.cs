@@ -25,7 +25,7 @@ public class EnemySpawner : MonoBehaviour
     
     private void SpawnRandomEnemy ()
     {
-        if (gameOverBehaviour.gameIsOver)
+        if (!gameOverBehaviour.gameIsOver)
         {
             var spawnPos = new Vector3(Random.Range(spawnPosX, -spawnPosX), 0, SpawnPosZ);
                 

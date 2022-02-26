@@ -9,24 +9,31 @@ public class PlayerController : MonoBehaviour
     private Touch touch;
     private float speed;
 
+    private GameOverBehaviour gameOverBehaviour;
+
     private void Start()
     {
         speed = 1f;
+        gameOverBehaviour = GameObject.Find("GameOverBehaviour").GetComponent<GameOverBehaviour>();
     }
 
     private void Update()
     {
-        if (Input.touchCount > 0)
+        if (!gameOverBehaviour.gameIsOver)
         {
-            touch = Input.GetTouch(0);
-
-            if (touch.phase == TouchPhase.Moved)
+            if (Input.touchCount > 0)
             {
-                transform.position = new Vector3(
-                    transform.position.x + touch.deltaPosition.x * speed,
-                    transform.position.y,
-                    transform.position.z + touch.deltaPosition.y * speed);
+                touch = Input.GetTouch(0);
+
+                if (touch.phase == TouchPhase.Moved)
+                {
+                    transform.position = new Vector3(
+                        transform.position.x + touch.deltaPosition.x * speed,
+                        transform.position.y,
+                        transform.position.z + touch.deltaPosition.y * speed);
+                }
             }
         }
+
     }
 }

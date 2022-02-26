@@ -15,9 +15,7 @@ public class PowerUpSpawner : MonoBehaviour
     private float zLowRange = 1500f;
 
     private float startDelay = 15f;
-
-    private float powerUpSpawnTime = 15.0f;
-
+    
     public GameOverBehaviour gameOverBehaviour;
 
     void Start()
@@ -28,7 +26,7 @@ public class PowerUpSpawner : MonoBehaviour
 
     void SpawnCollectable()
     {
-        if (gameOverBehaviour.gameIsOver)
+        if (!gameOverBehaviour.gameIsOver)
         {
             float randomX = Random.Range(-xSpawnRange, xSpawnRange);
             float randomZ = Random.Range(zLowRange, zHighRange);

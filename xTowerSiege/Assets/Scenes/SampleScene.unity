@@ -155,10 +155,10 @@ MonoBehaviour:
   enemyPrefab:
   - {fileID: 7854429535490182596, guid: 2821a4aa42bda4ef0a3388f9b729ca1e, type: 3}
   spawnPosX: 500
-  SpawnPosZ: 7520
+  SpawnPosZ: 4100
   startDelay: 2
   spawnInterval: 3
-  gameOverBehaviour: {fileID: 0}
+  gameOverBehaviour: {fileID: 621714667}
 --- !u!4 &212751156
 Transform:
   m_ObjectHideFlags: 0
@@ -266,7 +266,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gameOverText: {fileID: 1562328742}
   restartButton: {fileID: 1310267056}
-  gameIsOver: 1
+  gameIsOver: 0
 --- !u!4 &621714668
 Transform:
   m_ObjectHideFlags: 0
@@ -816,10 +816,10 @@ MonoBehaviour:
   enemyPrefab:
   - {fileID: 7854429535490182596, guid: 2821a4aa42bda4ef0a3388f9b729ca1e, type: 3}
   spawnPosX: -500
-  SpawnPosZ: 8300
+  SpawnPosZ: 4800
   startDelay: 31
   spawnInterval: 2
-  gameOverBehaviour: {fileID: 0}
+  gameOverBehaviour: {fileID: 621714667}
 --- !u!4 &1130711722
 Transform:
   m_ObjectHideFlags: 0
@@ -971,7 +971,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   projectilePrefab: {fileID: 7659208094093493724, guid: eef3c2f7f91b24f7aa869717b0076ac6, type: 3}
   shootInterval: 1
-  delay: 5
+  Startdelay: 2
 --- !u!1 &1310267055
 GameObject:
   m_ObjectHideFlags: 0
@@ -1838,10 +1838,10 @@ MonoBehaviour:
   enemyPrefab:
   - {fileID: 7854429535490182596, guid: 2821a4aa42bda4ef0a3388f9b729ca1e, type: 3}
   spawnPosX: -500
-  SpawnPosZ: 8000
+  SpawnPosZ: 4400
   startDelay: 11
   spawnInterval: 3
-  gameOverBehaviour: {fileID: 0}
+  gameOverBehaviour: {fileID: 621714667}
 --- !u!4 &2071817503
 Transform:
   m_ObjectHideFlags: 0
