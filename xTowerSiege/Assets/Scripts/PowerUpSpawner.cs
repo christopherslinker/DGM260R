@@ -10,17 +10,19 @@ public class PowerUpSpawner : MonoBehaviour
     
     private float xSpawnRange = 870f;
 
-    private float zSpawnRange = 719f;
+    private float zHighRange = 2900f;
 
-    private float startDelay = 3.0f;
+    private float zLowRange = 1500f;
 
-    private float powerUpSpawnTime = 3.0f;
+    private float startDelay = 15f;
+
+    private float powerUpSpawnTime = 15.0f;
 
     public GameOverBehaviour gameOverBehaviour;
 
     void Start()
     {        
-        InvokeRepeating("SpawnCollectable", startDelay, powerUpSpawnTime);
+        InvokeRepeating("SpawnCollectable", startDelay, Random.Range(10f, 30f));
         gameOverBehaviour = GameObject.Find("GameOverBehaviour").GetComponent<GameOverBehaviour>();
     }
 
@@ -29,7 +31,7 @@ public class PowerUpSpawner : MonoBehaviour
         if (gameOverBehaviour.gameIsOver)
         {
             float randomX = Random.Range(-xSpawnRange, xSpawnRange);
-            float randomZ = Random.Range(-zSpawnRange, zSpawnRange);
+            float randomZ = Random.Range(zLowRange, zHighRange);
     
             var spawnPos = new Vector3(randomX, ySpawn, randomZ);
             Instantiate(powerUp, spawnPos, powerUp.gameObject.transform.rotation);
