@@ -730,7 +730,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &896556647
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -744,6 +744,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   powerUp: {fileID: 2705652303690525730, guid: 5cb2eecf3bb2740839dcb728a7b7347e, type: 3}
+  startDelay: 2
   gameOverBehaviour: {fileID: 621714667}
 --- !u!4 &896556648
 Transform:

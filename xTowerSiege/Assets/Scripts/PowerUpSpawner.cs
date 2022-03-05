@@ -14,7 +14,7 @@ public class PowerUpSpawner : MonoBehaviour
 
     private float zLowRange = 1500f;
 
-    private float startDelay = 15f;
+    public float startDelay = 15f;
     
     public GameOverBehaviour gameOverBehaviour;
 
