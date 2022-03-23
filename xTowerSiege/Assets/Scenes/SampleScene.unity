@@ -153,7 +153,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyPrefab:
-  - {fileID: 7854429535490182596, guid: 2821a4aa42bda4ef0a3388f9b729ca1e, type: 3}
+  - {fileID: 5573579060909038877, guid: 5edcdbb5f118f46e39f11fc115650354, type: 3}
   spawnPosX: 500
   SpawnPosZ: 4100
   startDelay: 2
@@ -928,7 +928,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1130711721
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1950,7 +1950,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &2071817502
 MonoBehaviour:
   m_ObjectHideFlags: 0
