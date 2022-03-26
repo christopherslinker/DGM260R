@@ -11,6 +11,9 @@ GameObject:
   - component: {fileID: 4109160203532310168}
   - component: {fileID: 1056499808094132541}
   - component: {fileID: 2976184134795849207}
+  - component: {fileID: 6176512840234648270}
+  - component: {fileID: 6431699581059900592}
+  - component: {fileID: -1260980899373146623}
   m_Layer: 0
   m_Name: Gem
   m_TagString: Untagged
@@ -60,7 +63,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 56861548397141459, guid: 44e8c4d468808452e865392ad43d319e, type: 3}
+  - {fileID: 2100000, guid: 0e083d47219ec4891a08d2fec21d064e, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -82,3 +85,44 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &6176512840234648270
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3624689354867690530}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1d69a2358976c4a5da95d9c63d92fa99, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!65 &6431699581059900592
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3624689354867690530}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.081953704, y: 0.05509688, z: 0.08127491}
+  m_Center: {x: -0.0000000018626451, y: 0.0003104154, z: 0}
+--- !u!54 &-1260980899373146623
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3624689354867690530}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0

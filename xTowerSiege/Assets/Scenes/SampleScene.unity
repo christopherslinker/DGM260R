@@ -743,7 +743,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f19219ac0b9d4428593d5f0145fd102d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  powerUp: {fileID: 2705652303690525730, guid: 5cb2eecf3bb2740839dcb728a7b7347e, type: 3}
+  powerUp: {fileID: 3624689354867690530, guid: 70a80d0a73b9d4da9b96aa5c486398c7, type: 3}
   startDelay: 2
   gameOverBehaviour: {fileID: 621714667}
 --- !u!4 &896556648
