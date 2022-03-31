@@ -12,6 +12,11 @@ public class OnCollisionDestroy : MonoBehaviour
             Destroy(other.gameObject);
         }
 
+        if (other.CompareTag("Gem"))
+        {
+            Destroy(other.gameObject);
+        }
+
     }
 
 }
