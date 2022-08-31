@@ -1,0 +1,3 @@
+[submodule "xTowerSiege/Assets/Tools"]
+	path = xTowerSiege/Assets/Tools
+	url = https://github.com/christopherslinker/UnityTools
